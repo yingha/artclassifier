@@ -4,12 +4,16 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from geopy.geocoders import Nominatim
 import folium
+import os
 from folium.plugins import MiniMap
 
-imp = pd.read_csv('./data/impressionism_museum_list.csv',index_col=0)
-exp = pd.read_csv('./data/expressionism_museum_list.csv',index_col=0)
-cub = pd.read_csv('./data/cubism_museum_list.csv',index_col=0)
-pop = pd.read_csv('./data/pop_museum_list.csv',index_col=0)
+package_dir = os.path.dirname(__file__)
+print(package_dir)
+
+imp = pd.read_csv(package_dir +'./data/impressionism_museum_list.csv',index_col=0)
+exp = pd.read_csv(package_dir +'./data/expressionism_museum_list.csv',index_col=0)
+cub = pd.read_csv(package_dir +'./data/cubism_museum_list.csv',index_col=0)
+pop = pd.read_csv(package_dir +'./data/pop_museum_list.csv',index_col=0)
 
 def train_art_model(modelname):
 
