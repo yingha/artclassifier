@@ -10,10 +10,10 @@ from folium.plugins import MiniMap
 package_dir = os.path.dirname(__file__)
 print(package_dir)
 
-imp = pd.read_csv(package_dir +'./data/impressionism_museum_list.csv',index_col=0)
-exp = pd.read_csv(package_dir +'./data/expressionism_museum_list.csv',index_col=0)
-cub = pd.read_csv(package_dir +'./data/cubism_museum_list.csv',index_col=0)
-pop = pd.read_csv(package_dir +'./data/pop_museum_list.csv',index_col=0)
+imp = pd.read_csv(package_dir +'/data/impressionism_museum_list.csv',index_col=0)
+exp = pd.read_csv(package_dir +'/data/expressionism_museum_list.csv',index_col=0)
+cub = pd.read_csv(package_dir +'/data/cubism_museum_list.csv',index_col=0)
+pop = pd.read_csv(package_dir +'/data/pop_museum_list.csv',index_col=0)
 
 def train_art_model(modelname):
 
