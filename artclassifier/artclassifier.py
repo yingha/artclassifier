@@ -1,7 +1,5 @@
-import os
 import numpy as np
 import pandas as pd
-from tensorflow import keras
 from tensorflow.keras.applications import mobilenet_v2
 from geopy.geocoders import Nominatim
 import folium

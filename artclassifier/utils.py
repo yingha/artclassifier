@@ -1,7 +1,6 @@
 import pandas as pd
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras import layers
 from geopy.geocoders import Nominatim
 import folium
 import os
