@@ -7,11 +7,6 @@ from geopy.geocoders import Nominatim
 import folium
 from folium.plugins import MiniMap
 
-imp = pd.read_csv('./data/impressionism_museum_list.csv',index_col=0)
-exp = pd.read_csv('./data/expressionism_museum_list.csv',index_col=0)
-cub = pd.read_csv('./data/cubism_museum_list.csv',index_col=0)
-pop = pd.read_csv('./data/pop_museum_list.csv',index_col=0)
-
 def art_style_classifier(image,model,styles):
     # reverse color channels
     #image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
