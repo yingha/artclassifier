@@ -121,6 +121,10 @@ def art_map(art_loc_list):
 
     return m
 
+def get_model():
+    model = keras.models.load_model(package_dir +'/models/art_styles_model3.h5')
+    return model
+
 if __name__ == '__main__':
 
     # train_art_model
