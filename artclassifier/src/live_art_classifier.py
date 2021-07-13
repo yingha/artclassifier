@@ -8,8 +8,11 @@ import tensorflow.keras as keras
 
 logging.getLogger().setLevel(logging.INFO)
 
+package_dir = os.path.dirname(__file__)
+print(package_dir)
+
 # define the model
-model = keras.models.load_model('./models/art_styles_model2.h5')
+model = keras.models.load_model(package_dir +'/models/art_styles_model.h5')
 
 # also try out this resolution: 640 x 360
 webcam = init_cam(640, 480)

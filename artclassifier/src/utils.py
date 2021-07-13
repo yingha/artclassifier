@@ -72,9 +72,9 @@ def predictor(image,model):
     y_pred = y_pred.round(2)
 
     print('This art belongs to:')
-    print(f' Expressionism:      {y_pred[0][0]*100}%')
-    print(f' Impressionism:       {y_pred[0][1]*100}%')
-    print(f' Cubism: {y_pred[0][2]*100}%')
+    print(f' Cubism:      {y_pred[0][0]*100}%')
+    print(f' Expressionism:       {y_pred[0][1]*100}%')
+    print(f' Impressionism: {y_pred[0][2]*100}%')
     print(f' Pop Art:    {y_pred[0][3]*100}%')
 
 
