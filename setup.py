@@ -26,7 +26,7 @@ setup(
     install_requires=[
         'pandas',
         'numpy',
-        'tensorflow',
+        'tensorflow-cpu',
         'geopy',
         'folium',
         'python-Levenshtein'

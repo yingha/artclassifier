@@ -125,6 +125,7 @@ def get_model():
     model = keras.models.load_model(package_dir +'/models/art_styles_model3.h5')
     return model
 
+
 if __name__ == '__main__':
 
     # train_art_model
@@ -132,10 +133,13 @@ if __name__ == '__main__':
 
 
     # test art_map function
-    print(cub)
-    map = art_map(pop) 
-    print(map) 
-    print('done') 
+    #print(cub)
+    #map = art_map(pop) 
+    #print(map) 
+    #print('done') 
+
+    model = get_model()
+    print(model)
 
 
 
