@@ -27,7 +27,7 @@ setup(
         'pandas',
         'numpy',
         'tensorflow',
-        'geopy.geocoders',
+        'geopy',
         'folium',
         'python-Levenshtein'
     ],
